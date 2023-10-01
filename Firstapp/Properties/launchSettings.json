@@ -1,0 +1,29 @@
+﻿{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:15586",
+      "sslPort": 0
+    }
+  },
+  "profiles": {
+    "Firstapp": {//server name we can give any name 
+      "commandName": "Project",// to enable kestrel server 
+      "dotnetRunMessages": true,//to run cli command and get relevant msgs for commands
+      "launchBrowser": true,// to launch application in browser
+      "applicationUrl": "http://localhost:5067",// 1024<port nums>65536
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"// env varibales are the artifacts which contains global values across the application. we can choose development,production or staging 
+      // or enable any env variable such as api keys or server names or redirecting urls
+      }
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
